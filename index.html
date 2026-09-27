@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Black & White Advertising Solutions</title>
+    <meta name="description"
+        content="Contact Black & White Advertising Solutions - The Different Colors. Reach out for high-end advertising, decoration, branding, and printing solutions in Shebin El-Kom.">
+    <meta name="keywords"
+        content="Black & White, Advertising Solutions, Shebin El-Kom, Contact Us, Decoration, Branding, Printing, Signage">
+
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Custom Cursor Elements -->
+    <div id="custom-cursor" class="cursor-dot"></div>
+    <div id="cursor-follower" class="cursor-ring"></div>
+
+    <!-- Mouse Ambient Red Glow -->
+    <div id="ambient-glow" class="ambient-glow"></div>
+
+    <!-- Background Noise & Canvas Animation -->
+    <div class="bg-noise"></div>
+    <canvas id="bg-canvas" class="bg-canvas"></canvas>
+
+    <!-- CINEMATIC OPENING SEQUENCE OVERLAY -->
+    <div id="cinematic-intro" class="cinematic-intro">
+        <!-- Skip Intro Button -->
+        <button id="skip-intro" class="skip-intro-btn" aria-label="Skip Introduction">SKIP INTRO &#x2192;</button>
+
+        <!-- Intro Canvas for Lines & Particles -->
+        <canvas id="intro-canvas" class="intro-canvas"></canvas>
+
+        <div class="intro-content">
+            <!-- Central Subtle Glow -->
+            <div class="intro-glow"></div>
+
+            <!-- Uploaded Brand Logo -->
+            <div class="intro-logo-wrap" id="intro-logo-wrap">
+                <img src="logo.png" alt="Black & White Advertising Solutions" class="intro-logo-img">
+            </div>
+
+            <!-- Unified Headline & Tagline Text -->
+            <div class="intro-text-wrap">
+                <div class="intro-headline" id="intro-headline">
+                    <span class="intro-headline-text" id="intro-headline-text">
+                        <span class="text-contact">CONTACT</span> <span class="text-us">US</span>
+                    </span>
+                </div>
+                <div class="intro-red-line" id="intro-red-line"></div>
+                <div class="intro-tagline-wrap" id="intro-tagline-wrap">
+                    <p class="intro-tagline" id="intro-tagline">LET'S CREATE SOMETHING <span class="accent-text">DIFFERENT</span> TOGETHER.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Wipe Curtain for Transition -->
+        <div id="intro-curtain" class="intro-curtain"></div>
+    </div>
+
+    <!-- MAIN PAGE WRAPPER -->
+    <div id="main-wrapper" class="main-wrapper">
+
+        <!-- HEADER / BRAND BAR -->
+        <header class="site-header">
+            <div class="header-container">
+                <div class="header-logo-wrap hover-expand">
+                    <img src="logo.png" alt="Black & White Advertising Solutions" class="site-logo-img">
+                </div>
+                <div class="header-tag">
+                    <span class="status-dot"></span>
+                    <span class="header-tag-text">CONTACT US</span>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- HERO SECTION -->
+            <section class="hero-section" id="hero">
+                <div class="hero-bg-glow"></div>
+                <div class="container hero-container">
+                    <div class="hero-badge reveal-item">
+                        <span class="badge-line"></span>
+                        <span class="badge-text">EST. 2006 &bull; THE DIFFERENT COLORS</span>
+                    </div>
+
+                    <h1 class="hero-title reveal-item">
+                        <span class="title-contact">CONTACT</span>
+                        <span class="title-us">US</span>
+                    </h1>
+
+                    <div class="hero-divider reveal-item"></div>
+
+                    <p class="hero-statement reveal-item">
+                        LET'S CREATE SOMETHING <span class="accent-text">DIFFERENT</span> TOGETHER.
+                    </p>
+                </div>
+            </section>
+
+            <!-- MAIN CONTACT INFORMATION SECTION -->
+            <section class="contact-section" id="contact-main">
+                <div class="container contact-container">
+
+                    <!-- EDITORIAL TEXT & CONTACT INFO -->
+                    <div class="contact-info-col">
+                        <div class="info-header reveal-item">
+                            <h2 class="section-big-title">LET'S <span class="accent-text">TALK.</span></h2>
+                            <p class="info-description">
+                                Have a project in mind? We're ready to turn your ideas into powerful visual experiences.
+                                Reach out directly through any of our official channels below.
+                            </p>
+                        </div>
+
+                        <div class="info-items-grid">
+                            <!-- PHONE ITEM -->
+                            <div class="info-item reveal-item" style="--stagger-delay: 0.1s;">
+                                <div class="item-accent-line"></div>
+                                <div class="item-content">
+                                    <span class="item-label">PHONE</span>
+                                    <div class="item-values phone-values">
+                                        <a href="tel:01024557251" class="contact-link hover-expand">
+                                            <span class="link-text">01024557251</span>
+                                            <span class="link-icon">&#x2197;</span>
+                                        </a>
+                                        <a href="tel:0482334386" class="contact-link hover-expand">
+                                            <span class="link-text">048 233 43 86</span>
+                                            <span class="link-icon">&#x2197;</span>
+                                        </a>
+                                        <a href="tel:0482230937" class="contact-link hover-expand">
+                                            <span class="link-text">048 223 09 37</span>
+                                            <span class="link-icon">&#x2197;</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- WHATSAPP ITEM -->
+                            <div class="info-item reveal-item" style="--stagger-delay: 0.2s;">
+                                <div class="item-accent-line"></div>
+                                <div class="item-content">
+                                    <span class="item-label">WHATSAPP</span>
+                                    <div class="item-values">
+                                        <div class="whatsapp-num">+20 102 455 7251</div>
+                                        <a href="https://api.whatsapp.com/send/?phone=201024557251&type=phone_number"
+                                            target="_blank" rel="noopener" class="btn-whatsapp hover-expand">
+                                            <span>WHATSAPP</span>
+                                            <span class="btn-arrow">&#x2192;</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- EMAIL ITEM -->
+                            <div class="info-item reveal-item" style="--stagger-delay: 0.3s;">
+                                <div class="item-accent-line"></div>
+                                <div class="item-content">
+                                    <span class="item-label">EMAIL</span>
+                                    <div class="item-values">
+                                        <a href="mailto:blackwhiteadv1@gmail.com"
+                                            class="contact-link email-link hover-expand">
+                                            <span class="link-text">blackwhiteadv1@gmail.com</span>
+                                            <span class="link-icon">&#x2197;</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- SOCIAL MEDIA ITEM -->
+                            <div class="info-item reveal-item" style="--stagger-delay: 0.4s;">
+                                <div class="item-accent-line"></div>
+                                <div class="item-content">
+                                    <span class="item-label">SOCIAL MEDIA</span>
+                                    <div class="item-values social-values">
+                                        <a href="https://www.instagram.com/black_whiteadv2006/" target="_blank"
+                                            rel="noopener" class="social-link hover-expand">
+                                            <span>INSTAGRAM</span>
+                                            <span class="link-icon">&#x2197;</span>
+                                        </a>
+                                        <a href="https://www.facebook.com/blackwhite.designs2006/" target="_blank"
+                                            rel="noopener" class="social-link hover-expand">
+                                            <span>FACEBOOK</span>
+                                            <span class="link-icon">&#x2197;</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- LOCATION SECTION ("FIND US") -->
+            <section class="locations-section" id="locations">
+                <div class="container">
+                    <div class="locations-header reveal-item">
+                        <span class="section-tag">LOCATIONS</span>
+                        <h2 class="locations-title">FIND US</h2>
+                    </div>
+
+                    <div class="locations-grid">
+                        <!-- LOCATION 01 -->
+                        <div class="location-card reveal-item hover-expand" style="--stagger-delay: 0.1s;">
+                            <div class="location-num">01</div>
+                            <div class="card-accent-line"></div>
+                            <div class="location-content">
+                                <div class="location-type">HEAD OFFICE</div>
+                                <h3 class="location-city">Shebin El-Kom</h3>
+                                <p class="location-address">21 Hussein El-Ghurab St.</p>
+                                <a href="https://maps.app.goo.gl/kyZ3wfpvY8iJxH47A?g_st=iw" target="_blank"
+                                    rel="noopener" class="btn-directions">
+                                    <span>GET DIRECTIONS</span>
+                                    <span class="dir-arrow">&#x2192;</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- LOCATION 02 -->
+                        <div class="location-card reveal-item hover-expand" style="--stagger-delay: 0.25s;">
+                            <div class="location-num">02</div>
+                            <div class="card-accent-line"></div>
+                            <div class="location-content">
+                                <div class="location-type">SECOND BRANCH</div>
+                                <h3 class="location-city">Shebin El-Kom</h3>
+                                <p class="location-address">21 New Elhamamsy St.</p>
+                                <a href="https://maps.app.goo.gl/kyZ3wfpvY8iJxH47A?g_st=iw" target="_blank"
+                                    rel="noopener" class="btn-directions">
+                                    <span>GET DIRECTIONS</span>
+                                    <span class="dir-arrow">&#x2192;</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FINAL CTA SECTION -->
+            <section class="final-cta-section" id="cta">
+                <div class="container cta-container">
+                    <div class="cta-statement">
+                        <div class="cta-line-wrap reveal-cta"><span class="cta-text white-text">READY</span></div>
+                        <div class="cta-line-wrap reveal-cta"><span class="cta-text white-text">TO CREATE</span></div>
+                        <div class="cta-line-wrap reveal-cta"><span class="cta-text white-text">SOMETHING</span></div>
+                        <div class="cta-line-wrap reveal-cta"><span class="cta-text red-text">DIFFERENT?</span></div>
+                    </div>
+                    <div class="cta-sweep-line" id="cta-sweep-line"></div>
+                </div>
+            </section>
+        </main>
+
+        <!-- MINIMAL BRAND FOOTER -->
+        <footer class="site-footer">
+            <div class="container footer-container">
+                <div class="footer-brand-wrap">
+                    <img src="logo.png" alt="Black & White Advertising Solutions" class="footer-logo-img">
+                    <div class="footer-brand-details">
+                        <div class="footer-company">BLACK &amp; WHITE</div>
+                        <div class="footer-sub">ADVERTISING SOLUTIONS</div>
+                        <div class="footer-tagline">"The Different Colors"</div>
+                    </div>
+                </div>
+
+                <div class="footer-links-wrap">
+                    <a href="https://www.instagram.com/black_whiteadv2006/" target="_blank" rel="noopener"
+                        class="footer-link hover-expand">INSTAGRAM</a>
+                    <a href="https://www.facebook.com/blackwhite.designs2006/" target="_blank" rel="noopener"
+                        class="footer-link hover-expand">FACEBOOK</a>
+                    <a href="https://api.whatsapp.com/send/?phone=201024557251&type=phone_number" target="_blank"
+                        rel="noopener" class="footer-link hover-expand">WHATSAPP</a>
+                    <a href="mailto:blackwhiteadv1@gmail.com" class="footer-link hover-expand">EMAIL</a>
+                </div>
+
+                <div class="footer-copy">
+                    &copy; 2026 Black &amp; White Advertising Solutions. All Rights Reserved.
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+</body>
+
+</html>
